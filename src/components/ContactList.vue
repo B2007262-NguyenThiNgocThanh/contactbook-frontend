@@ -19,8 +19,7 @@ export default {
             v-for="(contact, index) in contacts"
             :key="contact._id" 
             :class="{ active: index === activeIndex }"
-            @click="updateActiveIndex(index)"
-        >
+            @click="updateActiveIndex(index)">
             {{ contact.name }}
         </li>
     </ul>
